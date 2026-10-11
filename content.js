@@ -6,7 +6,7 @@ let hasProcessedRepositories = false;
  */
 function checkPage() {
     const currentUrl = window.location.href;
-    const isRepositoriesPage = currentUrl.includes('/repositories');
+    const isRepositoriesPage = currentUrl.includes('/repositories') || currentUrl.includes('tab=repositories')  || currentUrl.includes('/repos');
 
     if (isRepositoriesPage && !isOnRepositoriesPage) {
     
